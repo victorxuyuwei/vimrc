@@ -4,7 +4,7 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 set guifont=Consolas:h12
-set scrolloff=3     " 光标移动到buffer的顶部和底部时保持3行距离
+set scrolloff=3
 set laststatus=2
 set tabstop=4
 set softtabstop=4
