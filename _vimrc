@@ -3,14 +3,26 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-set guifont=Consolas:h12
-set scrolloff=3
+syntax enable
+set background=light
+colorscheme solarized
+"set guifont=Consolas:h12
+set guifont=Monaco:h11
+set scrolloff=3     " 光标移动到buffer的顶部和底部时保持3行距离
 set laststatus=2
 set tabstop=4
 set softtabstop=4
+set showcmd
 set number
-set guioptions=m
+set guioptions=
 set shiftwidth=4
+hi Type gui=bold
+hi Conditional gui=bold
+hi Repeat gui=bold
+hi Keyword gui=bold
+hi Operator gui=bold
+hi Statement gui=bold
+hi Label gui=bold
 
 set diffexpr=MyDiff()
 function MyDiff()
